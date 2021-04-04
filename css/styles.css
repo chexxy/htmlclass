@@ -68,12 +68,6 @@ nav {
     background-color: #373684;
 }
 
-nav li {
-    display: block;
-    font-size: 2em;
-    border-top: 1px solid #e5e9fc;
-}
-
 /* Style rules for main content */
 main {
     padding: 2%;
