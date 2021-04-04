@@ -25,7 +25,7 @@ img {
 /* Style rules for mobile viewport */
 
 /* Hide tab-desk class */
-.tab-desk {
+.tab-desk, #menu-links {
     display: none;
 }
 
@@ -46,23 +46,32 @@ nav {
     background-color: #373684;
 }
 
-nav ul {
-    list-style-type: none;
+.mobile-nav a {
+    color: #fff;
     text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+ 
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 0;  
+}
+ 
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
 }
 
 nav li {
     display: block;
     font-size: 2em;
     border-top: 1px solid #e5e9fc;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
 }
 
 /* Style rules for main content */
@@ -243,11 +252,21 @@ footer a {
     }
     
     /* Tablet Viewport: Style rules for nav area */
+    
+    nav ul {
+    list-style-type: none;
+    text-align: center;
+   }
+    
     nav li {
         border-top: none;
         display: inline-block;
         border-right: 1px solid #e5e9fc;
         font-size: 1.5em;
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
     }
     
     nav li:last-child {
