@@ -39,6 +39,9 @@ header {
 header h1 {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
 }
 
 /* Style rules for navigation area */
@@ -236,11 +239,18 @@ footer a {
         display: block;
     }
 
-    .mobile {
+    .mobile, .mobile-nav {
         display: none;
     }
     
     /* Tablet Viewport: Style rule for header content */
+    
+    header h1 {
+        font-size: 1.5em;
+        padding: 4%;
+        margin-right: 15%;
+    }
+    
     span.tab-desk {
         display: inline;
     }
@@ -269,6 +279,7 @@ footer a {
     
     nav li a {
         padding: 0.25em 0.5em;
+        transform: scale(1.2);
     }
     
     .grid {
